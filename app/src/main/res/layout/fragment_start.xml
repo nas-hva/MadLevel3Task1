@@ -7,44 +7,44 @@
     tools:context=".StartFragment">
 
     <TextView
-        android:id="@+id/tvGreeting"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/greeting"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/tvInstructions"
-        app:layout_constraintEnd_toEndOf="@+id/tvInstructions"
-        app:layout_constraintStart_toStartOf="@+id/tvInstructions"
+        android:padding="16dp"
+        android:text="@string/welcome"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/tvInstructions"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/instructions"
-        app:layout_constraintBottom_toTopOf="@+id/btnStartRating"
-        app:layout_constraintEnd_toEndOf="@+id/btnStartRating"
-        app:layout_constraintStart_toStartOf="@+id/btnStartRating"
-        app:layout_constraintTop_toBottomOf="@+id/tvGreeting" />
+        android:layout_marginTop="72dp"
+        android:padding="16dp"
+        android:text="@string/click_start"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start_rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/btnStartRating"
-        android:layout_width="0dp"
+        android:id="@+id/btn_start_rating"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="88dp"
+        android:padding="16dp"
         android:text="@string/start"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInstructions" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

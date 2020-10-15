@@ -24,12 +24,10 @@ class StartFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btnStartRating.setOnClickListener {
+        btn_start_rating.setOnClickListener {
             findNavController().navigate(
                 R.id.action_startFragment_to_ratingFragment
             )
         }
-
-
     }
 }
