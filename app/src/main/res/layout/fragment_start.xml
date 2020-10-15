@@ -7,22 +7,44 @@
     tools:context=".StartFragment">
 
     <TextView
-        android:id="@+id/textview_first"
+        android:id="@+id/tvGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_first_fragment"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/greeting"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/tvInstructions"
+        app:layout_constraintEnd_toEndOf="@+id/tvInstructions"
+        app:layout_constraintStart_toStartOf="@+id/tvInstructions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/instructions"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartRating"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartRating"
+        app:layout_constraintStart_toStartOf="@+id/btnStartRating"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreeting" />
 
     <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnStartRating"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@+id/tvInstructions" />
 </androidx.constraintlayout.widget.ConstraintLayout>
